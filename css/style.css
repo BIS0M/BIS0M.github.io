@@ -7,128 +7,138 @@ img {
     height: auto;
 }
 
-
-@media (max-width: 767px) {}
-body {
-    width: 90%;
-    position: relative;
-    margin: 0 auto;
-
+.info {
+    font-weight: bold;
+    color:blueviolet
 }
 
-/* 상단바 시작 */
-.topbar {
-    margin-top: 5%;
-    height: 40px;
-    align-items: center;
-    display: flex;
+@media (max-width: 767px) { /*작음*/
+    body {
+        width: 90%;
+        position: relative;
+        margin: 0 auto;
+    
+    }
+    
+    /* 상단바 시작 */
+    .topbar {
+        margin-top: 5%;
+        height: 40px;
+        align-items: center;
+        display: flex;
+    }
+    
+    .webname {
+        font-size: 32px;
+        font-weight: 600;
+        padding-top: 0px;
+        padding-bottom: 0px;
+        flex: 9;
+    }
+    
+    
+    
+    .burgerbtn {
+        height: 40px;
+        width: 40px;
+        border-radius: 7px;
+        flex: 1;
+        z-index: 100;
+        background-color: white;
+        cursor: pointer;
+        border: none;
+    }
+    
+    /* 버튼 */
+    .stick {
+        background: rgb(94, 94, 94);
+        display: block;
+        height: 5px;
+        width: 110%;
+        position: relative;
+        align-items: center;
+        border-radius: 2px;
+    }
+    
+    .stick:after {
+        background: rgb(94, 94, 94);
+        content: '';
+        display: block;
+        height: 100%;
+        position: absolute;
+        top: 10px;
+        width: 100%;
+        border-radius: 2px;
+    }
+    
+    .stick:before {
+        background: rgb(77, 77, 77);
+        content: '';
+        display: block;
+        height: 100%;
+        position: absolute;
+        top: -10px;
+        width: 100%;
+        border-radius: 2px;
+    }
+    
+    /* 상단바 끝 */
+    
+    /*메뉴 내부*/
+    .inmenu {
+        display: none;
+        list-style-type: none;
+        position: absolute;
+        right: 0;
+    }
+    
+    .menubtn {
+        width: 100%;
+        height: 40px;
+        z-index: 100;
+        background-color: white;
+        border: none;
+        cursor: pointer;
+        display: inline-block;
+    }
+    
+    .menubtn:hover {
+        background-color: rgb(206, 206, 206);
+    }
+    
+    .inmenu span {
+        display: block;
+        color: gray;
+        font-size: 24px;
+    }
+    .imgsec {
+        display:flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .imgsec div {
+        flex-grow:3,4,3;
+        width:70%;
+    }
+    .contents {
+        display:block;
+        margin-top: 50px;
+    }
+    
+    .aboutme {
+        margin-top: 0.5em;
+    }
 }
 
-.webname {
-    font-size: 32px;
-    font-weight: 600;
-    padding-top: 0px;
-    padding-bottom: 0px;
-    flex: 9;
-}
 
 
 
-.burgerbtn {
-    height: 40px;
-    width: 40px;
-    border-radius: 7px;
-    flex: 1;
-    z-index: 100;
-    background-color: white;
-    cursor: pointer;
-    border: none;
-}
-
-/* 버튼 */
-.stick {
-    background: rgb(94, 94, 94);
-    display: block;
-    height: 5px;
-    width: 110%;
-    position: relative;
-    align-items: center;
-    border-radius: 2px;
-}
-
-.stick:after {
-    background: rgb(94, 94, 94);
-    content: '';
-    display: block;
-    height: 100%;
-    position: absolute;
-    top: 10px;
-    width: 100%;
-    border-radius: 2px;
-}
-
-.stick:before {
-    background: rgb(77, 77, 77);
-    content: '';
-    display: block;
-    height: 100%;
-    position: absolute;
-    top: -10px;
-    width: 100%;
-    border-radius: 2px;
-}
-
-/* 상단바 끝 */
-
-/*메뉴 내부*/
-.inmenu {
-    display: none;
-    list-style-type: none;
-    position: absolute;
-    right: 0;
-}
-
-.menubtn {
-    width: 100%;
-    height: 40px;
-    z-index: 100;
-    background-color: white;
-    border: none;
-    cursor: pointer;
-    display: inline-block;
-}
-
-.menubtn:hover {
-    background-color: rgb(206, 206, 206);
-}
-
-.inmenu span {
-    display: block;
-    color: gray;
-    font-size: 24px;
-}
-.imgsec {
-    display:flex;
-    align-items: center;
-}
-
-.contents {
-    display:block;
-    margin-top: 50px;
-}
-
-.aboutme {
-    margin-top: 0.5em;
-}
-
-
-
-@media (min-width:768px) and (max-width:991px) {
+@media (min-width:768px) and (max-width:991px) { /* 중간 */
     body {
         width: 70%;
         position: relative;
         margin: 0 auto;
-
     }
 
     /* 상단바 시작 */
@@ -223,18 +233,14 @@ body {
         font-size: 24px;
     }
     .contents {
-        display: flex;
+        display: inline-block;
         margin-top: 50px;
     }
-
-    .profile {
-        width:200%;
-    }
-    
-
     .aboutme {
-        margin-left: 1em;
+        margin-left: 1em;   
     }
 }
 
-@media (min-width: 992px) {}
+@media (min-width: 992px) { /*큼*/
+
+}
