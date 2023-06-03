@@ -2,11 +2,8 @@ $(document).ready(function () {
     $('.burgerbtn').click(function(){
         $('.inmenu').slideToggle('slow ');
     });
-
     $('#home').click(function(){
-        $('.inmenu').css({
-            "display": "none"
-        });
+        $('.inmenu').slideToggle('slow ');
         $('.menu_home').css({
             "color": "rgb(49,49,49)",
         });
@@ -29,9 +26,7 @@ $(document).ready(function () {
     });
 
     $('#interests').click(function(){
-        $('.inmenu').css({
-            "display": "none"
-        });
+        $('.inmenu').slideToggle('slow ');
         $('.menu_int').css({
             "color": "rgb(49,49,49)",
         });
@@ -53,9 +48,7 @@ $(document).ready(function () {
     });
 
     $('#hobby').click(function(){
-        $('.inmenu').css({
-            "display": "none"
-        });
+        $('.inmenu').slideToggle('slow ');
         $('.menu_hobby').css({
             "color": "rgb(49,49,49)",
         });

@@ -168,11 +168,63 @@ body {
     text-decoration:none;
 
 }
-@media (min-width:768px) and (max-width:991px) {
+.mbhr {
+    display:block;
+}
+@media (min-width:768px) and (max-width:991px){
     body {
         width: 90%;
         position: relative;
         display: inline-block;
+        margin-left: 5%;
+    }
+    .contents1 > div{
+        display: inline-block;
+    }
+    .imgsec {
+        width: 30%;
+        margin-left: -15%;
+    }
+
+    .praphsec {
+        width:65%;
+        float:right;
+    }
+}
+@media (min-width: 992px) {
+    body {
+        width: 95%;
+        position: relative;
+        display: inline-block;
+        margin-left: 2.5%;
+    }
+
+    .contents1 > div{
+        display: inline-block;
+    }
+    .imgsec {
+        width: 30%;
+        margin-left: -15%;
+    }
+    .contents2 > div{
+        display: inline-block;
+    }
+    .praphsec {
+        width:65%;
+        float:right;
+    }
+    #interimg {
+        width: 45%;
         float:left;
+    }
+    .praphse2 {
+        width:55%;
+    }
+    .contents3 > img {
+        display: inline-block;
+        width: 50%;
+    }
+    .mbhr {
+        display:none;
     }
 }
